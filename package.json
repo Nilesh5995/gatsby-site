@@ -33,7 +33,10 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy:github": "npm run build && node ./scripts/deploy-github",
+    
+   
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    //"deploy:github": "npm run build && node ./scripts/deploy-github",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
